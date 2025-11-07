@@ -21,7 +21,7 @@ public static void main(String[] args) {
      } else if (guthaben == 0) {
          rating += 2;
      } else {
-         if (Math.abs(monEingang) >= Math.abs(guthaben)) {
+         if (monEingang >= Math.abs(guthaben)) {
              rating += 1;
          } else {
              rating -= 1;
@@ -29,7 +29,7 @@ public static void main(String[] args) {
      }
 
      
-     if (guthaben < 0 && Math.abs(monEingang) < Math.abs(guthaben) && rating < 0) {
+     if (guthaben < 0 && monEingang < Math.abs(guthaben) && rating < 0) {
          warnhinweis = true;
      } else {
          warnhinweis = false;
